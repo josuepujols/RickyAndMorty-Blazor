@@ -1,0 +1,99 @@
+﻿
+<style>
+    #input-search {
+        margin-right: 15px;
+    }
+    .form-select {
+        cursor: pointer;
+    }
+</style>
+
+<!--Controls-->
+<div class="d-flex justify-content-center w-100 mt-3">
+    <input id="input-search" 
+            type="text" 
+            class="form-control w-50" 
+            placeholder="Search a character"
+             @bind="@SearchTerm" @oninput="@((e) => SearchCharacter(e))"/>
+    <select class="form-select w-25"
+            @onchange="SelectedQuantity">
+        @for(int i = 1; i <= 42; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+</div>
+
+
+<div class="d-flex justify-content-center flex-md-wrap w-100 mt-5">
+    @foreach(var item in characters)
+    {
+        <div class="card col-md-3 mb-3" style="margin-right: 15px;">
+            <img src="@item.Image" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@item.Name</h5>
+                <div class="d-flex justify-content-around mt-4">
+                    <p style="height: 40px !important;" class="card-text rounded d-block bg-danger p-2">@item.Gender</p>
+                    <p style="height: 40px !important;" class="card-text rounded d-block bg-warning p-2">@item.Status</p>
+                    <p style="height: 40px !important;" class="card-text rounded d-block bg-info p-2">@item.Species</p>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                    <a @onclick="() => GoDetails(item)" class="d-block btn btn-primary card-footer w-75 mt-3 mb-2">Details</a>
+                </div>
+            </div>
+        </div>
+    }
+</div> 
+  
+
+
+
+@code {
+    private string SearchTerm = "";
+    private string page = "1";
+    //Instances
+    GenericServices<Character> _serviceCharacter = new GenericServices<Character>();
+    List<Character> characters = new List<Character>();
+    //getting all characters with pagination
+    protected override async Task OnInitializedAsync()
+    {
+        characters = await GetCharacters();
+        Console.WriteLine(characters);
+    }
+
+    private async void SelectedQuantity(ChangeEventArgs e)
+    {
+        page = (string)e.Value;
+        await OnInitializedAsync();
+        //Reload the state of the component when change the source
+        StateHasChanged();
+    }
+    private async void SearchCharacter(ChangeEventArgs e)
+    {
+       SearchTerm=(string)e.Value;
+        await OnInitializedAsync();
+        StateHasChanged();
+    }
+    private void GoDetails(Character item)
+    {
+        Console.WriteLine(item);
+    }
+    private async Task<List<Character>> GetCharacters()
+    {
+        try
+        {
+            List<Character> ListToReturn = new List<Character>();
+            var data = await _serviceCharacter.GetCharactersAsync(SearchTerm, int.Parse(page));
+            foreach(var item in data)
+            {
+                ListToReturn.Add(item);
+            }
+            return ListToReturn;
+        }
+        catch (Exception e)
+        {
+            throw e;
+        }
+    }
+
+}

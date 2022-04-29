@@ -1,0 +1,29 @@
+﻿<style>
+
+</style>
+
+<!--Controls-->
+<div class="d-flex justify-content-center w-100">
+    <input type="text" class="form-control w-50" placeholder="Search a character"/>
+    <select class="form-control w-25">
+        <option value="10">10</option>
+    </select>
+</div>
+
+<div class="d-flex justify-content-center w-100">
+    <div class="card col-md-4">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+</div>
+
+
+@code {
+    List<Character> characters = new List<Character>();
+    //getting all characters with pagination
+
+}

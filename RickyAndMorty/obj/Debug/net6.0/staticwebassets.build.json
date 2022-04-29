@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fT8HDOxyKfl5C1vJBHajHlu7HYlok0EmlIMc2VW4rhM=",
+  "Hash": "VEn65Sae4euKZRJ2CK4kKOnotiAGjHlZeB0JzZCBhnk=",
   "Source": "RickyAndMorty",
   "BasePath": "/",
   "Mode": "Root",
@@ -7257,6 +7257,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Web Develoment\\ASP.NET\\RickyAndMorty\\RickyAndMorty\\wwwroot\\Rick-And-Morty-Logo.png",
+      "SourceId": "RickyAndMorty",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Web Develoment\\ASP.NET\\RickyAndMorty\\RickyAndMorty\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Rick-And-Morty-Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Rick-And-Morty-Logo.png"
     },
     {
       "Identity": "C:\\Web Develoment\\ASP.NET\\RickyAndMorty\\RickyAndMorty\\wwwroot\\sample-data\\weather.json",

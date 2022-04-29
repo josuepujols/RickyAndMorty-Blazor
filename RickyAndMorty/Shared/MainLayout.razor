@@ -1,5 +1,20 @@
 ﻿@inherits LayoutComponentBase
 
+<style>
+    #logo-container {
+        width: 100%;
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: center;
+    }
+    #logo-container img {
+        width: 25%;
+    }
+    .top-row {
+        height: 140px !important;
+    }
+</style>
+
 <div class="page">
     @*<div class="sidebar">
         <NavMenu />
@@ -7,7 +22,9 @@
 
     <main>
         <div class="top-row px-4">
-            @*<a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>*@
+            <div id="logo-container">
+                <img src="./Rick-And-Morty-Logo.png" />
+            </div>
         </div>
 
         <article class="content px-4">

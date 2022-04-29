@@ -815,9 +815,7 @@ C:\Web Develoment\ASP.NET\RickyAndMorty\RickyAndMorty\obj\Debug\net6.0\build-gz\
 C:\Web Develoment\ASP.NET\RickyAndMorty\RickyAndMorty\obj\Debug\net6.0\build-gz\ShPq7FXw.gz
 C:\Web Develoment\ASP.NET\RickyAndMorty\RickyAndMorty\obj\Debug\net6.0\build-gz\4mQK9hUH.gz
 C:\Web Develoment\ASP.NET\RickyAndMorty\RickyAndMorty\obj\Debug\net6.0\build-gz\blTTpVbi.gz
-C:\Web Develoment\ASP.NET\RickyAndMorty\RickyAndMorty\obj\Debug\net6.0\build-gz\TCv3fFoK.gz
 C:\Web Develoment\ASP.NET\RickyAndMorty\RickyAndMorty\obj\Debug\net6.0\build-gz\ZGMZCmVt.gz
-C:\Web Develoment\ASP.NET\RickyAndMorty\RickyAndMorty\obj\Debug\net6.0\build-gz\nX00j5+W.gz
 C:\Web Develoment\ASP.NET\RickyAndMorty\RickyAndMorty\obj\Debug\net6.0\build-gz\FmYcWHpA.gz
 C:\Web Develoment\ASP.NET\RickyAndMorty\RickyAndMorty\obj\Debug\net6.0\build-gz\1HaJqKjV.gz
 C:\Web Develoment\ASP.NET\RickyAndMorty\RickyAndMorty\obj\Debug\net6.0\build-gz\fmJ0mUX0.gz
@@ -832,3 +830,5 @@ C:\Web Develoment\ASP.NET\RickyAndMorty\RickyAndMorty\obj\Debug\net6.0\RickyAndM
 C:\Web Develoment\ASP.NET\RickyAndMorty\RickyAndMorty\obj\Debug\net6.0\refint\RickyAndMorty.dll
 C:\Web Develoment\ASP.NET\RickyAndMorty\RickyAndMorty\obj\Debug\net6.0\RickyAndMorty.pdb
 C:\Web Develoment\ASP.NET\RickyAndMorty\RickyAndMorty\obj\Debug\net6.0\ref\RickyAndMorty.dll
+C:\Web Develoment\ASP.NET\RickyAndMorty\RickyAndMorty\obj\Debug\net6.0\build-gz\TCv3fFoK.gz
+C:\Web Develoment\ASP.NET\RickyAndMorty\RickyAndMorty\obj\Debug\net6.0\build-gz\nX00j5+W.gz

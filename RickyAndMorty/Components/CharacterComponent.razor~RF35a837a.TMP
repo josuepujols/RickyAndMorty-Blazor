@@ -1,0 +1,82 @@
+﻿
+<style>
+    #input-search {
+        margin-right: 15px;
+    }
+    .form-select {
+        cursor: pointer;
+    }
+</style>
+
+<!--Controls-->
+<div class="d-flex justify-content-center w-100 mt-3">
+    <input id="input-search" 
+            type="text" 
+            class="form-control w-50" 
+            placeholder="Search a character"
+             @bind="@SearchTerm" @oninput="@((e) => { SearchTerm=(string)e.Value;})"/>
+    <select class="form-select w-25"
+            @onchange="SelectedQuantity">
+        @for(int i = 1; i <= 42; i++)
+        {
+            <option value="@i">@i</option>
+        }
+    </select>
+</div>
+
+@foreach(var item in characters)
+{
+    <div class="d-flex justify-content-center w-100 mt-5">
+    <div class="card col-md-4">
+      <img src="" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a @onclick="GoDetails" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+</div>   
+}
+
+
+@code {
+    private string SearchTerm = "";
+    private string page = "1";
+    //Instances
+    GenericServices<Character> _serviceCharacter = new GenericServices<Character>();
+    List<Character> characters = new List<Character>();
+    //getting all characters with pagination
+    protected override async Task OnInitializedAsync()
+    {
+        GetCharacters();
+    }
+
+    private void SelectedQuantity(ChangeEventArgs e)
+    {
+        page = (string)e.Value;
+        GetCharacters();
+    }
+    private void GoDetails()
+    {
+        Console.WriteLine(characters);
+    }
+    private async void GetCharacters()
+    {
+        try
+        {
+            if (characters.Count > 0)
+                characters.Clear();
+            var data = await _serviceCharacter.GetCharactersAsync(SearchTerm, int.Parse(page));
+            foreach(var item in data)
+            {
+                characters.Add(item);
+            }
+            Console.WriteLine(characters);
+        }
+        catch (Exception e)
+        {
+            throw e;
+        }
+    }
+
+}
