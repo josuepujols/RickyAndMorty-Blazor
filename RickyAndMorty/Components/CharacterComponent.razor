@@ -71,8 +71,8 @@
     private async void SearchCharacter(ChangeEventArgs e)
     {
        SearchTerm=(string)e.Value;
-        await OnInitializedAsync();
-        StateHasChanged();
+       await OnInitializedAsync();
+       StateHasChanged();
     }
     private void GoDetails(Character item)
     {

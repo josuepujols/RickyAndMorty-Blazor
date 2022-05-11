@@ -199,7 +199,7 @@
       "System.Private.CoreLib.dll": "sha256-KVnZkFos\/ML\/3S2isVijfmFZXO4zEQeCga6BZvGdTbY=",
       "Model.dll": "sha256-h+VbovuB4\/kLIxjazbxujWdLXyX3N8sq9gUaHTapNeY=",
       "Services.dll": "sha256-KuMGXAIKxxW1elmIs5q8sWLqJp3G6Ez0puDw1qNoCGI=",
-      "RickyAndMorty.dll": "sha256-1Fn3qcASy9hSTbdCwhexK9N0OVfoRtlAtXXugXh9T9w="
+      "RickyAndMorty.dll": "sha256-WVPyd2t9nKHnjfq1Sk+34BEO+TkXJju0gIiqOYp25Bg="
     },
     "extensions": null,
     "lazyAssembly": null,
@@ -207,7 +207,7 @@
     "pdb": {
       "Model.pdb": "sha256-kHltsYGpR93D70YizhQU\/wpIkB9tFoM7TVhSxOnTQs8=",
       "Services.pdb": "sha256-4kiOO0mBfFtgE6Hnp3+S9Kaz5qm1xSXom1LrGAF4L2A=",
-      "RickyAndMorty.pdb": "sha256-AfNP0xJWHIbjgZqg4N9\/GgG8qErupQehhhIGbVKQtSg="
+      "RickyAndMorty.pdb": "sha256-TxR9dyRVvtPXyVfxRSKODpwTxrWWH9LkNDCvPVPQoyk="
     },
     "runtime": {
       "dotnet.6.0.4.fgd669k6aw.js": "sha256-WYno\/cK5MDsl5yi4T\/\/QgUskbBfhLL77i+c0uKzO9+c=",
